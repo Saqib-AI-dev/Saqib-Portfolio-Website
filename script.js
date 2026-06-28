@@ -709,7 +709,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function initVisitorCounter() {
   var countEl = document.getElementById('visitorCount');
   if (!countEl) return;
-  fetch('https://api.countapi.xyz/hit/saqib-portfolio-mocha.vercel.app/visits')
+  fetch('https://api.countapi.xyz/hit/saqib-portfolio-kappa.vercel.app/visits')
     .then(function(res) { return res.json(); })
     .then(function(data) {
       if (data && data.value) {
