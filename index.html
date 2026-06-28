@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muhammad Saqib Ali — BS-AI Student at Aror University. AI Developer, Innovator, Problem Solver." />
+
+  <!-- Open Graph / WhatsApp / LinkedIn -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Muhammad Saqib Ali | AI Developer & Portfolio" />
+  <meta property="og:description" content="BS-AI Student at Aror University. Building AI solutions, web apps and smart systems. Available for freelance & collaboration." />
+  <meta property="og:image"       content="profile.jpeg" />
+  <meta property="og:url" content="https://saqib-portfolio-mocha.vercel.app" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Muhammad Saqib Ali | AI Developer" />
+  <meta name="twitter:description" content="BS-AI Student at Aror University. Building AI solutions, web apps and smart systems." />
+  <meta name="twitter:image"       content="profile.jpeg" />
+
+  <!-- SEO -->
+  <meta name="author"   content="Muhammad Saqib Ali" />
+  <meta name="keywords" content="Muhammad Saqib Ali, AI Developer, BS Artificial Intelligence, Aror University, Portfolio, Machine Learning, Python, Java" />
+
+  <title>Muhammad Saqib Ali | AI Developer | Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%23b44fff'/><stop offset='100%25' stop-color='%23ff2d9b'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='%23100e1a'/><text x='50' y='68' font-size='58' text-anchor='middle' fill='url(%23g)' font-family='serif' font-weight='900'>S</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="additions.css" />
+
+  <script src="data.js"></script>
+</head>
+<body>
+
+  <div id="cursor-dot"></div>
+  <div id="cursor-outline"></div>
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-neural">◈</span>Saqib<span class="logo-dot">.</span><span class="logo-ai">ai</span>
+        <span class="logo-shimmer"></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home"           class="nav-link active">Home</a></li>
+        <li><a href="#about"          class="nav-link">About</a></li>
+        <li><a href="#skills"         class="nav-link">Skills</a></li>
+        <li><a href="#projects"       class="nav-link">Projects</a></li>
+        <li><a href="#experience"     class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact"        class="nav-link">Contact</a></li>
+      </ul>
+      <a href="resume.pdf" class="btn-resume" download>
+        <i class="fas fa-download"></i> Resume
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#home"           class="mob-link">Home</a></li>
+        <li><a href="#about"          class="mob-link">About</a></li>
+        <li><a href="#skills"         class="mob-link">Skills</a></li>
+        <li><a href="#projects"       class="mob-link">Projects</a></li>
+        <li><a href="#experience"     class="mob-link">Experience</a></li>
+        <li><a href="#certifications" class="mob-link">Certifications</a></li>
+        <li><a href="#contact"        class="mob-link">Contact</a></li>
+        <li><a href="resume.pdf" download class="mob-resume">Download Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="home" class="hero">
+    <div class="hero-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-eyebrow"><span class="eyebrow-dot"></span> Available for opportunities</p>
+        <h1 class="hero-name">
+          Muhammad<br />
+          <span class="name-highlight">Saqib Ali</span>
+        </h1>
+        <div class="hero-role">
+          <span class="role-prefix">I build </span>
+          <i id="roleIcon"></i>
+          <span class="role-rotating" id="roleText"></span>
+          <span class="role-cursor">|</span>
+        </div>
+
+        <p class="hero-desc">
+          Passionate about AI, Machine Learning, Data Science, and Software Engineering—learning, building, and growing every day.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary"><span>View My Work</span><i class="fas fa-arrow-right"></i></a>
+          <a href="#contact"  class="btn-secondary">Let's Talk</a>
+        </div>
+
+        
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+            <p>Projects</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="1">0</span><span class="stat-plus">+</span>
+            <p>Years Learning</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="4">0</span><span class="stat-plus">+</span>
+            <p>Certificates</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <div class="hex-glow"></div>
+          <div class="hex-orbit"></div>
+          <div class="hex-orbit-2"></div>
+          <div class="avatar-hex-frame">
+            <div class="avatar-hex-inner">
+              <img
+                src="profile.jpeg"
+                alt="Muhammad Saqib Ali"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <div class="avatar-initials" style="display:none;">MSA</div>
+            </div>
+          </div>
+          <div class="float-tag tag-1"><i class="fab fa-python"></i> Python</div>
+          <div class="float-tag tag-2"><i class="fas fa-brain"></i> ML</div>
+          <div class="float-tag tag-3"><i class="fas fa-robot"></i> AI</div>
+          <div class="float-tag tag-4"><i class="fas fa-database"></i> Data</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <p>Scroll Down</p>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Get to know me</p>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+
+        <div class="about-left" data-aos="fade-right">
+
+          <div class="about-photo-card">
+            <div class="about-photo-hex-wrap">
+              <div class="about-photo-hex">
+                <img
+                  src="profile.jpeg"
+                  alt="Muhammad Saqib Ali"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                />
+                <div class="about-photo-fallback" style="display:none;">MSA</div>
+              </div>
+              <div class="about-photo-glow"></div>
+            </div>
+            <div class="about-name-badge">
+              <span class="badge-name">Muhammad Saqib Ali</span>
+              <span class="badge-role"><i class="fas fa-circle status-online"></i> Available for work</span>
+            </div>
+          </div>
+
+          <div class="about-ai-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="ai-avatar-wrap">
+              <img
+                src="ai-avatar.png"
+                alt="AI Avatar"
+                class="ai-avatar-img"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <div class="ai-avatar-fallback" style="display:none;">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="ai-avatar-badge">AI</div>
+            </div>
+            <div class="ai-card-text">
+              <p class="ai-card-title">My AI Version</p>
+              <p class="ai-card-sub">Crafted with AI tools</p>
+            </div>
+            <div class="ai-card-pulse"></div>
+          </div>
+
+          <div class="about-info-pills" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-pill"><i class="fas fa-map-marker-alt"></i><span>Sukkur, Pakistan</span></div>
+            <div class="info-pill"><i class="fas fa-graduation-cap"></i><span>BS Artificial Intelligence</span></div>
+            <div class="info-pill"><i class="fas fa-university"></i><span>Aror University</span></div>
+            <div class="info-pill"><i class="fas fa-briefcase"></i><span>Freelance AI Developer</span></div>
+          </div>
+
+        </div>
+
+        <div class="about-right" data-aos="fade-left">
+
+          <div class="code-terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="t-dot red"></span>
+                <span class="t-dot yellow"></span>
+                <span class="t-dot green"></span>
+              </div>
+              <span class="terminal-title">saqib_ali.py</span>
+              <span class="terminal-lang">Python</span>
+            </div>
+            <div class="terminal-body" id="terminalBody">
+              <pre class="terminal-code" id="terminalCode"></pre>
+            </div>
+          </div>
+
+          <h3 class="about-heading">Turning Curiosity into <span class="gradient-text">Intelligence</span></h3>
+          <p class="about-text">I'm Muhammad Saqib Ali, a passionate AI student at Aror University of Art, Architecture, Design & Heritage. My journey in artificial intelligence is driven by one core belief — <em>technology should solve real human problems.</em></p>
+          <p class="about-text">From building machine learning models to exploring neural networks, I love working at the intersection of data, creativity, and intelligence. My unique university background gives me a rare perspective — I think like a designer and build like an engineer.</p>
+          <p class="about-text">When I'm not training models or writing code, I'm exploring the latest AI research and constantly asking: <em>how can this be smarter?</em></p>
+
+          <div class="about-cta">
+            <a href="#contact" class="btn-primary"><span>Work With Me</span><i class="fas fa-arrow-right"></i></a>
+            <a href="resume.pdf" download class="btn-outline"><i class="fas fa-download"></i> Download CV</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">What I work with</p>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-tabs">
+        <button class="tab-btn active" data-tab="programming">Programming</button>
+        <button class="tab-btn" data-tab="web">Web Dev</button>
+        <button class="tab-btn" data-tab="tools">Tools</button>
+        <button class="tab-btn" data-tab="ai">AI / ML</button>
+      </div>
+      <div class="skills-content">
+        <div class="tab-pane active" id="tab-programming">
+          <div class="skills-grid"></div>
+        </div>
+        <div class="tab-pane" id="tab-web">
+          <div class="skills-grid"></div>
+        </div>
+        <div class="tab-pane" id="tab-tools">
+          <div class="skills-grid"></div>
+        </div>
+        <div class="tab-pane" id="tab-ai">
+          <div class="skills-grid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">What I've built</p>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">My journey</p>
+        <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+      </div>
+      <div class="exp-grid"></div>
+    </div>
+  </section>
+
+  <!-- ── CERTIFICATIONS ── -->
+  <section id="certifications" class="certifications">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">What I've earned</p>
+        <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+      </div>
+      <div class="certs-grid"></div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Get in touch</p>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <div class="contact-stats-row">
+          <span class="contact-stat"><i class="fas fa-bolt"></i> Fast Reply</span>
+          <span class="contact-stat-divider">·</span>
+          <span class="contact-stat"><i class="fas fa-globe"></i> Remote Ready</span>
+          <span class="contact-stat-divider">·</span>
+          <span class="contact-stat"><i class="fas fa-briefcase"></i> Open to Work</span>
+        </div>
+      </div>
+      <div class="cv2-wrapper" data-aos="fade-up">
+
+        <!-- LEFT -->
+        <div class="cv2-left">
+          <h3 class="cv2-heading">Have a project in mind?</h3>
+          <p class="cv2-sub">Whether you want to collaborate on an AI project, need a data science solution, or just want to say hello — my inbox is always open.</p>
+
+          <div class="cv2-links">
+            <a href="mailto:saqibsoomro384@gmail.com" class="cv2-link">
+              <div class="cv2-link-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <p class="cv2-link-label">Email</p>
+                <p class="cv2-link-val">saqibsoomro384@gmail.com</p>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-saqib-9a281a3b7/" target="_blank" class="cv2-link">
+              <div class="cv2-link-icon"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <p class="cv2-link-label">LinkedIn</p>
+                <p class="cv2-link-val">linkedin.com/in/muhammad-saqib</p>
+              </div>
+            </a>
+            <a href="https://github.com/Saqib-AI-dev" target="_blank" class="cv2-link">
+              <div class="cv2-link-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <p class="cv2-link-label">GitHub</p>
+                <p class="cv2-link-val">github.com/Saqib-AI-dev</p>
+              </div>
+            </a>
+            <a href="https://wa.me/923113762428" target="_blank" class="cv2-link cv2-link-wa">
+              <div class="cv2-link-icon cv2-wa-icon"><i class="fab fa-whatsapp"></i></div>
+              <div>
+                <p class="cv2-link-label">WhatsApp</p>
+                <p class="cv2-link-val">+92 311 3762428</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="cv2-available">
+            <span class="cv2-avail-dot"></span>
+            Available for work
+          </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="cv2-divider"></div>
+
+        <!-- RIGHT -->
+        <div class="cv2-right">
+          <p class="cv2-form-title">Send a message</p>
+          <form class="cv2-form" id="contactForm" action="https://formspree.io/f/mojoanzy" method="POST">
+            <input type="hidden" name="_subject" value="New Portfolio Message from Muhammad Saqib Ali's Website" />
+            <input type="hidden" name="_replyto" value="" id="replyTo" />
+            <input type="text"   name="_gotcha"  style="display:none" />
+
+            <div class="cv2-row">
+              <div class="cv2-group">
+                <label>Name</label>
+                <input type="text" name="name" id="name" placeholder="Muhammad Ali" required />
+              </div>
+              <div class="cv2-group">
+                <label>Email</label>
+                <input type="email" name="email" id="email" placeholder="hello@example.com" required />
+              </div>
+            </div>
+            <div class="cv2-group">
+              <label>Subject</label>
+              <input type="text" name="subject" id="subject" placeholder="Project collaboration" required />
+            </div>
+            <div class="cv2-group">
+              <label>Message</label>
+              <textarea name="message" id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="cv2-send-btn">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <div id="form-success" style="display:none; margin-top:1rem; padding:0.8rem 1rem; background:rgba(0,200,81,0.1); border:1px solid #00c851; border-radius:10px; color:#00c851; font-size:0.88rem; text-align:center;">
+              ✅ Message sent! I'll reply within 24 hours.
+            </div>
+            <div id="form-error" style="display:none; margin-top:1rem; padding:0.8rem 1rem; background:rgba(255,68,68,0.1); border:1px solid #ff4444; border-radius:10px; color:#ff4444; font-size:0.88rem; text-align:center;">
+              ❌ Something went wrong. Please email me directly at saqibsoomro384@gmail.com
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-neural">◈</span>Saqib<span class="logo-dot">.</span><span class="logo-ai">ai</span>
+      </div>
+      <p class="footer-text">Designed & Built by <span class="gradient-text">Muhammad Saqib Ali</span></p>
+      <div class="footer-socials">
+        <a href="https://github.com/Saqib-AI-dev"                      target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/muhammad-saqib-9a281a3b7/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:saqibsoomro384@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+     <p class="footer-copy">© 2026 Muhammad Saqib Ali. All rights reserved. &nbsp;·&nbsp; <i class="fas fa-eye" style="color:#b44fff;font-size:0.65rem;"></i> <span id="visitorCount" style="color:#b44fff;font-family:'Fira Code',monospace;font-size:0.72rem;">...</span> visits</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page Not Found</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #07060d;
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    .container { position: relative; z-index: 1; padding: 2rem; }
+    .code {
+      font-size: clamp(6rem, 20vw, 10rem);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      background: linear-gradient(135deg, #b44fff, #ff2d9b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .title {
+      font-size: clamp(1.2rem, 3vw, 1.8rem);
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+    }
+    .desc {
+      color: #a0a0b0;
+      font-size: 1rem;
+      max-width: 400px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.8rem 2rem;
+      background: linear-gradient(135deg, #b44fff, #ff2d9b);
+      border-radius: 50px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 24px rgba(180,79,255,0.4);
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 36px rgba(180,79,255,0.6);
+    }
+    /* background orbs */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+    }
+    .orb-1 { width: 350px; height: 350px; background: rgba(180,79,255,0.08); top: -80px; right: -80px; }
+    .orb-2 { width: 280px; height: 280px; background: rgba(255,45,155,0.07); bottom: 0; left: -60px; }
+  </style>
+</head>
+<body>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <div class="container">
+    <div class="code">404</div>
+    <h1 class="title">Oops! Page Not Found</h1>
+    <p class="desc">
+      Looks like this page doesn't exist or was moved.
+      Let's get you back on track.
+    </p>
+    <a href="index.html" class="btn">
+      <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+  </div>
+</body>
+</html>
