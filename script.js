@@ -709,17 +709,17 @@ document.addEventListener('DOMContentLoaded', function() {
 function initVisitorCounter() {
   var countEl = document.getElementById('visitorCount');
   if (!countEl) return;
-  fetch('https://api.countapi.xyz/hit/saqib-portfolio-kappa.vercel.app/visits')
-    .then(function(res) { return res.json(); })
-    .then(function(data) {
-      if (data && data.value) {
-        countEl.textContent = data.value.toLocaleString();
-      } else {
-        countEl.textContent = '100+';
-      }
-    })
-    .catch(function() {
-      countEl.textContent = '100+';
-    });
+fetch('https://hits.sh/saqib-portfolio-kappa.vercel.app.json')
+  .then(function(res) { return res.json(); })
+  .then(function(data) {
+    if (data && data.count) {
+      countEl.textContent = data.count.toLocaleString();
+    } else {
+      countEl.textContent = '1';
+    }
+  })
+  .catch(function() {
+    countEl.textContent = '1';
+  });
 }
 initVisitorCounter();
