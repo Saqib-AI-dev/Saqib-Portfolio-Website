@@ -100,7 +100,7 @@ const PROJECTS = [
     stack:    ["HTML5", "CSS3", "JavaScript"],
     category: "web",
     github:   "https://github.com/Saqib-AI-dev/Saqib-Portfolio-Website",
-    live:     "https://saqib-portfolio-mocha.vercel.app",
+    live:     "https://saqib-portfolio-kappa.vercel.app/",
   },
   {
     id:       5,
