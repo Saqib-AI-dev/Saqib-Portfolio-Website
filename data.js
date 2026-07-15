@@ -48,7 +48,7 @@ const SKILLS = [
   { name: "Java Swing (GUI)", icon: "fas fa-window-restore", percent: 78, tab: "tools"       },
   { name: "NetBeans IDE",     icon: "fas fa-laptop-code",    percent: 85, tab: "tools"       },
   { name: "MySQL Workbench",  icon: "fas fa-server",         percent: 55, tab: "tools"       },
-  { name: "Git & GitHub",     icon: "fab fa-git-alt",        percent: 20, tab: "tools"       },
+  { name: "Git & GitHub",     icon: "fab fa-git-alt",        percent: 85, tab: "tools"       },
   { name: "VS Code",          icon: "fas fa-code",           percent: 90, tab: "tools"       },
   { name: "Machine Learning", icon: "fas fa-brain",          percent: 0,  tab: "ai"          },
   { name: "Deep Learning",    icon: "fas fa-network-wired",  percent: 0,  tab: "ai"          },
