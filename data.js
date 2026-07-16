@@ -78,7 +78,7 @@ const PROJECTS = [
     stack:    ["HTML5", "CSS3"],
     category: "web",
     github:   "https://github.com/Saqib-AI-dev/Travel_Sphere-tour-guide-website",
-    live:     "",
+    live:     "https://travelsphere-ten.vercel.app/home.html",
   },
   {
     id:       3,
